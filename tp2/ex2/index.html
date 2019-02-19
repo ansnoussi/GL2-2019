@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+    </head>
+    <body>
+        <div class="options">
+            <h1>Mes Options</h1>
+            <div>
+                <Label>Mettre en exergue le paragraphe au click</Label>
+                <input type="checkbox" id="exergue">
+            </div>
+            
+            <div>
+                <label for="size">Taille de l'écriture</label>
+                <input id="size" type="number" value="20">
+            </div>
+            
+            <div>
+                <Label for="font">Police</Label>
+                <select id="font">
+                    <option value="Time">Times new Roman</option>
+                    <option value="Garamond">Garamond</option>
+                    <option value="Calibri">Verdana</option>
+                </select>
+            </div>
+            
+            <div id="align_r">
+                <input type="radio" name="align_r" value="left" id="left" checked>Left
+                <input type="radio" name="align_r" value="right" id="right">Right
+                <input type="radio" name="align_r" value="center" id="center">Center
+                <input type="radio" name="align_r" value="justify" id="justify">Justify
+            </div>
+            
+        </div>
+        <div class="contents">
+            <p id="p1">
+                Google (prononcé ['guːgəl]) est une entreprise américaine de services technologiques fondée en 1998 dans la Silicon Valley, en Californie, par Larry Page et Sergueï Brin, créateurs du moteur de recherche Google.<br>
+                C'est une filiale de la société Alphabet depuis août 2015.<br>
+                L'entreprise s'est principalement fait connaître à travers la situation monopolistique de son moteur de recherche, concurrencé historiquement par AltaVista puis par Yahoo! et Bing. Elle a ensuite procédé à de nombreuses acquisitions et développements et détient aujourd'hui de nombreux logiciels et sites web notables parmi lesquels YouTube, le système d'exploitation pour téléphones mobiles Android, ainsi que d'autres services tels que Google Earth, Google Maps ou Google Play.
+                <a href="https://google.com" >Google</a>
+            </p>
+            <p id="p2">
+                Le World Wide Web Consortium, abrégé par le sigle W3C, est un organisme de standardisation à but non lucratif, fondé en octobre 1994 chargé de promouvoir la compatibilité des technologies du World Wide Web telles que HTML5, HTML, XHTML, XML, RDF, SPARQL, CSS, XSL, PNG, SVG et SOAP. Fonctionnant comme un consortium international, il regroupe au 26 février 2013, 383 entreprises partenaires.<br>
+                Le leitmotiv du W3C est « Un seul web partout et pour tous ».
+                <a href="https://www.w3c.org/">W3C</a>
+            </p>
+            <h2>Ajouter Un commentaire: Votre avis est important!</h2>
+            <form>
+                <table>
+                    <tr>
+                        <td><Label for="pseudo">Pseudo</Label></td>
+                        <td><input id="pseudo" type="text">*Le pseudo ne doit contenir que des lettres alphabétique miniscule ou des chiffres</td>
+                    </tr>
+                    <tr>
+                        <td><label for="email">Email</label></td>
+                        <td><input id="email" type="text"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="cp">Code Postal</label></td>
+                        <td><input type="number" id="cp"></td>
+                    </tr>
+                    <tr>
+                        <td><label for="comment">Commentaire<br>(&lt;500)</label></td>
+                        <td><textarea maxlength="500" id="comment"></textarea></td>
+                    </tr>
+                    <tr>
+                        <td colspan="2" class="submit">
+                            <div class="flex-container">
+                                <input class="flex-item" type="button" value="envoyer">
+                                <input class="flex-item" type="reset" value="reset">
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+            <div class="comments"></div>
+        </div>
+        <script src="script.js"></script>
+    </body>
+</html>
